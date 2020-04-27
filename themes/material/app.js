@@ -1,30 +1,3 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@ez-taiwan 
-Learn Git and GitHub without any code!
-Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
-
-
-ez-taiwan
-/
-goindex
-forked from 5Lin/goindex
-0
-0
-704
- Code Pull requests 0 Actions Projects 0 Wiki Security 0 Insights Settings
-goindex/themes/material/app.js /
-@iwestlin iwestlin set view mode on files like MP4, HTML...
-f213d31 on 17 Mar
-@donwa@ShallowAi@myluoluo@iwestlin
-431 lines (390 sloc)  14.5 KB
-  
 // 在head 中 載入 必要靜態
 document.write('<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mdui@0.4.3/dist/css/mdui.min.css">');
 // markdown支援
@@ -454,15 +427,3 @@ $(function(){
     
     render(path);
 });
-© 2020 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
