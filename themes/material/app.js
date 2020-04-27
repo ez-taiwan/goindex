@@ -96,7 +96,7 @@ function list(path){
     $.post(path,'{"password":"'+password+'"}', function(data,status){
         var obj = jQuery.parseJSON(data);
         if(typeof obj != 'null' && obj.hasOwnProperty('error') && obj.error.code == '401'){
-            var pass = prompt("目錄加密, 請輸入密碼","");
+            var pass = prompt("資料夾加密, 請輸入密碼","");
             localStorage.setItem('password'+path, pass);
             if(pass != null && pass != ""){
                 list(path);
@@ -258,9 +258,9 @@ function file_code(path){
 // 檔案展示 影片 |mp4|webm|avi|
 function file_video(path){
 	var url = window.location.origin + path;
-	var playBtn = `<a class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent" href="potplayer://${url}"><i class="mdui-icon material-icons">&#xe038;</i>在 potplayer 中播放</a>`;
+	var playBtn = `<a class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent" href="potplayer://${url}"><i class="mdui-icon material-icons">&#xe038;</i>使用 Potplayer 播放</a>`;
 	if (/(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent)) { //移動端
-	    playBtn = `	<a class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent" href="intent:${url}#Intent;package=com.mxtech.videoplayer.ad;S.title=${path};end"><i class="mdui-icon material-icons">&#xe039;</i>在mxplayer中播放</a>`;
+	    playBtn = `	<a class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent" href="intent:${url}#Intent;package=com.mxtech.videoplayer.pro;S.title=${path};end"><i class="mdui-icon material-icons">&#xe039;</i>使用 MXplayer Pro 播放</a>`;
 	}
 	var content = `
 <div class="mdui-container-fluid">
